@@ -2,7 +2,7 @@
 Welcome, watch modding community!
 
 The goal for this guide is to help someone with zero PCB design experience take advantage of its production method to create their own NH3X (or any other) watch dials.
-Minimum order quantities from PCB factories like PCBWay or JLCPCB can be as low as five units, at a cost of around $100 USD - perfect for hobby projects.
+Minimum order quantities from PCB factories like PCBWay or JLCPCB can be as low as five units, at a cost of around $100 USD - pricey, but within reach for hobby projects.
 
 ## Prerequisites
 
