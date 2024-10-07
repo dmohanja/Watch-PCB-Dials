@@ -50,7 +50,8 @@ Minimum order quantities from PCB factories like PCBWay or JLCPCB can be as low 
      4. Soldermask colour: the base colour of the PCB/dial.
      5. Silkscreen colour: the colour of anything on the F.Silkscreen layer (usually constrained by soldermask colour).
      6. Surface finish: ENIG (immersion gold) recommended. Avoid HASL - this surface finish is basically blobs of solder.
-     7. Other settings e.g. minimum drill sizes, vias, copper thickness can be left at defaults for the most optimal cost.
+     7. Order number: you will either need to specify a location for the order number in the design (following the factory's instructions), or pay $1-$2 to remove the order number altogether. The last thing you want is an order number of the face of your dial.
+     8. Other settings e.g. minimum drill sizes, vias, copper thickness can be left at defaults for the most optimal cost.
 
 > [!TIP]
 > 1 and 2 layer PCBs often cost the same. You can rotate a second design by 180 degrees and place it on the reverse side of a 2 layer PCB (use the B.* layers: B.Cu, B.Mask, B.Silkscreen, etc.). This way you get two designs produced for the price of one!
