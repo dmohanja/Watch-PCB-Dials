@@ -1,8 +1,8 @@
 # Watch PCB Dials
 Welcome, watch modding community!
 
-Hopefully this guide can help someone with zero PCB design experience take advantage of this production method to create their own NH3X (or any other) watch dials.
-Minimum order quantities from PCB factories like PCBWay or JLCPCB can be as low as 5 units, at a cost of around $100 USD - perfect for hobby projects.
+The goal for this guide is to help someone with zero PCB design experience take advantage of its production method to create their own NH3X (or any other) watch dials.
+Minimum order quantities from PCB factories like PCBWay or JLCPCB can be as low as five units, at a cost of around $100 USD - perfect for hobby projects.
 
 ## Prerequisites
 
@@ -14,18 +14,18 @@ Minimum order quantities from PCB factories like PCBWay or JLCPCB can be as low 
 
    ![Screenshot 2024-10-07 210912](https://github.com/user-attachments/assets/44199ef6-4d10-46a9-b90e-5d6b282eca08)
 
-2. Double click Example.kicad_pro (located in the Example folder) to open the project.
+2. Double-click Example.kicad_pro (located in the Example folder) to open the project.
 
 > [!NOTE]
-> You may encounter messages from KiCad about missing libraries, or asking tp speficy locations for footprints, ignore these or follow on-screen instructions to dismiss them - don't worry, they won't affect what we're doing.
+> You may encounter messages from KiCad about missing libraries, or asking to specify locations for footprints, ignore these or follow on-screen instructions to dismiss them - don't worry, they won't affect what we're doing.
 
-3. Once in KiCad, click the "PCB Editor" button to start editing the PCB layout.
+3. Once in KiCad, click the "PCB Editor" button to start editing the included PCB layout.
 
    ![Screenshot 2024-10-07 212200](https://github.com/user-attachments/assets/155968a0-21e3-4179-a7c1-339a96a0d8d8)
 
 ## Design
 
-4. Familiarize yourself with the editor, and features of the design. The example provided illustrates the various layers of a PCB design.
+4. Familiarize yourself with the editor, and features of the design. The example provided illustrates the various layers of a PCB.
    ![Screenshot 2024-10-07 230228](https://github.com/user-attachments/assets/833fe51b-b67b-4293-9543-653c874e20af)
 
 6. Import SVG files with your own designs, or use the built-in drawing tools.
@@ -37,7 +37,7 @@ Minimum order quantities from PCB factories like PCBWay or JLCPCB can be as low 
 
 ## Production
 
-6. Generate and export production files (gerbers, drill, and sometimes map files)
+6. Generate and export production files (gerber, drill, and sometimes map files)
    - [Guide for PCBWay](https://www.pcbway.com/helpcenter/generate_gerber/Generate_Gerber_file_from_Kicad.html)
    - [Guide for JLCPCB](https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-8)
 
@@ -49,12 +49,12 @@ Minimum order quantities from PCB factories like PCBWay or JLCPCB can be as low 
      3. Thickness: 0.4mm (as per the [NH series spec](https://www.timemodule.com/uploads/attachments/download/Spec%20Sheet/NH35_SS.pdf)).
      4. Soldermask colour: the base colour of the PCB/dial.
      5. Silkscreen colour: the colour of anything on the F.Silkscreen layer (usually constrained by soldermask colour).
-     6. Surface finish: ENIG (immersion gold) recommended. Avoid HASL - this surface finish is basically blobs of solder.
+     6. Surface finish: ENIG (immersion gold) recommended. Avoid HASL - this surface finish is just solder, and appears irregular.
      7. Order number: you will either need to specify a location for the order number in the design (following the factory's instructions), or pay $1-$2 to remove the order number altogether. The last thing you want is an order number of the face of your dial.
      8. Other settings e.g. minimum drill sizes, vias, copper thickness can be left at defaults for the most optimal cost.
 
 > [!TIP]
-> 1 and 2 layer PCBs often cost the same. You can rotate a second design by 180 degrees and place it on the reverse side of a 2 layer PCB (use the B.* layers: B.Cu, B.Mask, B.Silkscreen, etc.). This way you get two designs produced for the price of one!
+> 1- and 2-layer PCBs often cost the same. You can rotate a second design by 180 degrees and place it on the reverse side of a 2-layer PCB (use the B.* layers: B.Cu, B.Mask, B.Silkscreen, etc.). This way you get two designs produced for the price of one!
 > Note, this should work for NH38 dials too, but the rotation is not exactly 180 degrees thanks to the slightly offset position of the open heart. On paper this offset is +/- 4.687 degrees, but I have never tried it.
 
 ### Happy Modding!
